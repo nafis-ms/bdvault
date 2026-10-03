@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#09090d">
+    <link rel="icon" href="Image/logo.png">
+
+    <title>Headsets - BD VAULT</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!--   HEADER   -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img class="logo-mark" src="Image/logo.png" alt="BD VAULT logo">
+            <span>BD <span>VAULT</span></span>
+        </a>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="categories.html" class="active">CATEGORIES</a>
+        </nav>
+
+        <div class="actions">
+
+            <form class="search">
+                <input type="search" name="q" list="search-list"
+                    placeholder="Search..." aria-label="Search products"
+                    autocomplete="off">
+                <button type="submit" aria-label="Search"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+                <datalist id="search-list">
+                    <option value="Keyboards" data-url="keyboard.html"></option>
+                    <option value="Mouse" data-url="mouse.html"></option>
+                    <option value="Headsets" data-url="headsets.html"></option>
+                    <option value="Controllers" data-url="controller.html"></option>
+                    <option value="Monitors" data-url="monitor.html"></option>
+                    <option value="Accessories" data-url="accessories.html"></option>
+                    <option value="About Us" data-url="about.html"></option>
+                    <option value="All Categories" data-url="categories.html"></option>
+                </datalist>
+            </form>
+
+            <a href="#" class="cart" title="Shopping Cart"
+                aria-label="Shopping Cart"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3h2.7l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.1a1.6 1.6 0 0 0 1.6-1.2L20.5 7H6.1"/></svg></a>
+
+            <a href="login.html" title="Login"
+                aria-label="Login"><svg class="ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20.5c0-3.6 3.6-6 8-6s8 2.4 8 6"/></svg></a>
+
+            <button type="button" class="theme-toggle"
+                aria-label="Toggle dark and light mode" aria-pressed="false"
+                title="Toggle Theme">
+                <svg class="ti-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                <svg class="ti-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!--   HEADSETS   -->
+
+    <main class="kb-page">
+
+        <div class="kb-head">
+            <p class="eyebrow">CATEGORY</p>
+            <h1>Headsets</h1>
+            <p>
+                Immersive audio and clear voice chat for gaming and everyday use.
+            </p>
+        </div>
+
+        <div class="kb-list" data-category="headsets"></div>
+
+        <p class="kb-note">
+            Hear Everything. Talk Clearly. Stay In The Game.
+        </p>
+
+    </main>
+
+
+    <!--  FOOTER  -->
+
+    <footer class="lfoot">
+
+        <div class="wrap">
+
+            <div class="lfoot-grid">
+
+                <!-- Brand -->
+                <div class="lfoot-brand">
+
+                    <a class="brand" href="index.html">
+                        <img src="Image/logo.png" alt="BD VAULT">
+                        <span>BD VAULT</span>
+                    </a>
+
+                    <p>
+                        Your destination for premium computer and
+                        gaming accessories — built for better setups,
+                        better performance, and better gaming.
+                    </p>
+
+                    <div class="soc-row">
+                        <a class="soc" href="https://www.facebook.com/musbitul.haque.2025/">FB</a>
+                        <a class="soc" href="https://www.linkedin.com/in/musbitul-nafis-883a653a2/">LD</a>
+                        <a class="soc" href="https://github.com/nafis-ms">GH</a>
+                        <a class="soc" href="https://discord.gg/ZAzrAZVfnT">DC</a>
+                    </div>
+
+                </div>
+
+                <!-- Shop -->
+                <div>
+                    <h5>Shop</h5>
+                    <a href="index.html">Home</a>
+                    <a href="categories.html">All Categories</a>
+                    <a href="categories.html">Featured Products</a>
+                    <a href="index.html#deals">Special Deals</a>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h5>Categories</h5>
+                    <a href="keyboard.html">Keyboards</a>
+                    <a href="mouse.html">Mouse</a>
+                    <a href="headsets.html">Headsets</a>
+                    <a href="controller.html">Controllers</a>
+                    <a href="monitor.html">Monitors</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+
+                <!-- BD VAULT -->
+                <div>
+                    <h5>BD VAULT</h5>
+                    <a href="about.html">About Us</a>
+                    <a href="categories.html">Our Products</a>
+                    <a href="about.html">Why BD VAULT</a>
+                    <a href="about.html">Contact Us</a>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h5>Support</h5>
+                    <a href="help.html">Help &amp; FAQ</a>
+                    <a href="shipping.html">Shipping Information</a>
+                    <a href="returns.html">Return Policy</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="lfoot-bot">
+                <span>
+                    © 2026 BD VAULT. All rights reserved.
+                    Developed by Md. Musbitul Haque
+                </span>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

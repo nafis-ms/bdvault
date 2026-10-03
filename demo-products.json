@@ -1,0 +1,447 @@
+[
+  {
+    "id": "demo-accessories-1",
+    "category": "accessories",
+    "name": "Velcro Cable Ties",
+    "brand": "Bd Vault",
+    "price": 250,
+    "image": "Image/c1.jpg",
+    "specs": [
+      "50 pieces",
+      "Reusable",
+      "Cable organizer"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-accessories-2",
+    "category": "accessories",
+    "name": "Adhesive Cable Clips",
+    "brand": "Bd Vault",
+    "price": 350,
+    "image": "Image/c2.avif",
+    "specs": [
+      "6 pieces",
+      "Self-adhesive",
+      "Cable holder"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-accessories-3",
+    "category": "accessories",
+    "name": "Desk Cable Holder Clamp",
+    "brand": "Bd Vault",
+    "price": 550,
+    "image": "Image/c3.jpg",
+    "specs": [
+      "Clamp-on",
+      "Holds multiple cables",
+      "Cable holder"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-accessories-4",
+    "category": "accessories",
+    "name": "4-Port USB 3.0 Hub",
+    "brand": "Ugreen",
+    "price": 1400,
+    "image": "Image/c4.jpg",
+    "specs": [
+      "4 USB ports",
+      "USB 3.0",
+      "Plug and play"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-accessories-5",
+    "category": "accessories",
+    "name": "Extended Mouse Pad",
+    "brand": "Redragon",
+    "price": 1500,
+    "image": "Image/c5.webp",
+    "specs": [
+      "Extra large",
+      "Stitched edges",
+      "Non-slip base"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-accessories-6",
+    "category": "accessories",
+    "name": "Headset Stand",
+    "brand": "Bd Vault",
+    "price": 1800,
+    "image": "Image/c6.jpg",
+    "specs": [
+      "Sturdy base",
+      "Desk organizer",
+      "Fits most headsets"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-controller-1",
+    "category": "controller",
+    "name": "Logitech F310",
+    "brand": "Logitech",
+    "price": 3200,
+    "image": "Image/prdct_controller.png",
+    "specs": [
+      "Wired USB",
+      "Dual analog sticks",
+      "PC gamepad"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-controller-2",
+    "category": "controller",
+    "name": "8BitDo Pro 2",
+    "brand": "8Bitdo",
+    "price": 6500,
+    "image": "Image/prdct_controller.png",
+    "specs": [
+      "Bluetooth",
+      "Remappable buttons",
+      "Rechargeable",
+      "PC & Switch"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-controller-3",
+    "category": "controller",
+    "name": "Xbox Wireless Controller",
+    "brand": "Microsoft",
+    "price": 7500,
+    "image": "Image/prdct_controller.png",
+    "specs": [
+      "Bluetooth",
+      "USB-C",
+      "Textured grips",
+      "Xbox & PC"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-controller-4",
+    "category": "controller",
+    "name": "Nintendo Switch Pro Controller",
+    "brand": "Nintendo",
+    "price": 7800,
+    "image": "Image/prdct_controller.png",
+    "specs": [
+      "Wireless",
+      "Motion controls",
+      "HD rumble"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-controller-5",
+    "category": "controller",
+    "name": "Sony DualSense",
+    "brand": "Sony",
+    "price": 8500,
+    "image": "Image/prdct_controller.png",
+    "specs": [
+      "Wireless",
+      "Haptic feedback",
+      "Adaptive triggers",
+      "PS5 & PC"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-headsets-1",
+    "category": "headsets",
+    "name": "HyperX Cloud Stinger 2",
+    "brand": "Hyperx",
+    "price": 5500,
+    "image": "Image/prdct_headset.png",
+    "specs": [
+      "Wired 3.5 mm",
+      "50 mm drivers",
+      "Swivel-to-mute mic"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-headsets-2",
+    "category": "headsets",
+    "name": "Razer Kraken X",
+    "brand": "Razer",
+    "price": 6500,
+    "image": "Image/prdct_headset.png",
+    "specs": [
+      "Wired",
+      "7.1 surround",
+      "Lightweight"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-headsets-3",
+    "category": "headsets",
+    "name": "Logitech G335",
+    "brand": "Logitech",
+    "price": 7500,
+    "image": "Image/prdct_headset.png",
+    "specs": [
+      "Wired 3.5 mm",
+      "Memory foam ear pads",
+      "Flip-to-mute mic"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-headsets-4",
+    "category": "headsets",
+    "name": "Corsair HS80 RGB Wireless",
+    "brand": "Corsair",
+    "price": 17000,
+    "image": "Image/prdct_headset.png",
+    "specs": [
+      "Wireless",
+      "Dolby Atmos",
+      "RGB lighting"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-headsets-5",
+    "category": "headsets",
+    "name": "SteelSeries Arctis Nova 7",
+    "brand": "Steelseries",
+    "price": 25000,
+    "image": "Image/prdct_headset.png",
+    "specs": [
+      "Wireless 2.4 GHz",
+      "Bluetooth",
+      "Retractable mic"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-keyboard-1",
+    "category": "keyboard",
+    "name": "Redragon K552 Kumara",
+    "brand": "Redragon",
+    "price": 3850,
+    "image": "Image/prdct_keyboard.png",
+    "specs": [
+      "Mechanical (blue switch)",
+      "87 keys",
+      "RGB backlit",
+      "Wired USB"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-keyboard-2",
+    "category": "keyboard",
+    "name": "Fantech MK852 Max Core",
+    "brand": "Fantech",
+    "price": 4200,
+    "image": "Image/prdct_keyboard.png",
+    "specs": [
+      "Mechanical",
+      "Sakura Edition",
+      "Wired USB"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-keyboard-3",
+    "category": "keyboard",
+    "name": "Logitech G213 Prodigy",
+    "brand": "Logitech",
+    "price": 4950,
+    "image": "Image/prdct_keyboard.png",
+    "specs": [
+      "Membrane",
+      "104 keys",
+      "5-zone RGB",
+      "Integrated palm rest",
+      "Wired USB"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-keyboard-4",
+    "category": "keyboard",
+    "name": "HyperX Alloy Core RGB",
+    "brand": "Hyperx",
+    "price": 5000,
+    "image": "Image/prdct_keyboard.png",
+    "specs": [
+      "Membrane",
+      "RGB lighting",
+      "Wired USB"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-keyboard-5",
+    "category": "keyboard",
+    "name": "Fantech MK872 Optilite",
+    "brand": "Fantech",
+    "price": 5100,
+    "image": "Image/prdct_keyboard.png",
+    "specs": [
+      "Mechanical",
+      "Tournament Edition",
+      "RGB lighting"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-monitor-1",
+    "category": "monitor",
+    "name": "MSI G2412",
+    "brand": "Msi",
+    "price": 16500,
+    "image": "Image/prdct_monitor.png",
+    "specs": [
+      "24 inch",
+      "170 Hz",
+      "IPS panel",
+      "Full HD"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-monitor-2",
+    "category": "monitor",
+    "name": "AOC 24G2",
+    "brand": "Aoc",
+    "price": 18500,
+    "image": "Image/prdct_monitor.png",
+    "specs": [
+      "24 inch",
+      "144 Hz",
+      "IPS panel",
+      "1 ms"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-monitor-3",
+    "category": "monitor",
+    "name": "Gigabyte G27F",
+    "brand": "Gigabyte",
+    "price": 27500,
+    "image": "Image/prdct_monitor.png",
+    "specs": [
+      "27 inch",
+      "165 Hz",
+      "IPS panel",
+      "Full HD"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-monitor-4",
+    "category": "monitor",
+    "name": "LG UltraGear 27GN800",
+    "brand": "Lg",
+    "price": 32000,
+    "image": "Image/prdct_monitor.png",
+    "specs": [
+      "27 inch",
+      "144 Hz",
+      "IPS panel",
+      "1440p"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-monitor-5",
+    "category": "monitor",
+    "name": "Samsung Odyssey G5",
+    "brand": "Samsung",
+    "price": 38000,
+    "image": "Image/prdct_monitor.png",
+    "specs": [
+      "27 inch",
+      "Curved",
+      "144 Hz",
+      "1440p"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-mouse-1",
+    "category": "mouse",
+    "name": "Corsair Katar Pro",
+    "brand": "Corsair",
+    "price": 1799,
+    "image": "Image/prdct_mouse.png",
+    "specs": [
+      "Ultra light",
+      "Gaming mouse"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-mouse-2",
+    "category": "mouse",
+    "name": "Logitech G102 Lightsync",
+    "brand": "Logitech",
+    "price": 1900,
+    "image": "Image/prdct_mouse.png",
+    "specs": [
+      "8,000 DPI",
+      "6 buttons",
+      "RGB lighting",
+      "Wired USB"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-mouse-3",
+    "category": "mouse",
+    "name": "Razer DeathAdder Essential",
+    "brand": "Razer",
+    "price": 2600,
+    "image": "Image/prdct_mouse.png",
+    "specs": [
+      "Ergonomic",
+      "Gaming mouse"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-mouse-4",
+    "category": "mouse",
+    "name": "Logitech G304 Lightspeed",
+    "brand": "Logitech",
+    "price": 3950,
+    "image": "Image/prdct_mouse.png",
+    "specs": [
+      "Wireless",
+      "12,000 DPI",
+      "6 buttons",
+      "99 g"
+    ],
+    "featured": false
+  },
+  {
+    "id": "demo-mouse-5",
+    "category": "mouse",
+    "name": "Logitech G Pro X Superlight",
+    "brand": "Logitech",
+    "price": 13499,
+    "image": "Image/prdct_mouse.png",
+    "specs": [
+      "Wireless",
+      "Ultra light",
+      "Pro gaming mouse"
+    ],
+    "featured": false
+  }
+]
