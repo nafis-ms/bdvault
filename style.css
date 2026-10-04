@@ -3435,3 +3435,79 @@ button.primary { border: 0; cursor: pointer; color: #fff; font-family: inherit; 
 @media (hover: hover) {
   [data-theme="light"] .cat:hover strong { color: #d94f00; }
 }
+
+/* ===== ACCOUNT MENU ===== */
+.actions { position: relative; }
+
+.account-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 12px);
+  min-width: 210px;
+  padding: 8px;
+  border-radius: 14px;
+  background: #15151d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  z-index: 60;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity .2s ease, transform .25s ease, visibility .2s;
+}
+.account-menu.open { opacity: 1; visibility: visible; transform: none; }
+
+.account-menu a,
+.account-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  color: #d8d7e2;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+.account-menu a:hover,
+.account-menu button:hover { background: rgba(255, 255, 255, 0.07); color: #fff; transform: translateX(3px); }
+
+.account-menu .am-primary { background: #7167ff; color: #fff; margin-bottom: 4px; font-weight: 600; }
+.account-menu .am-primary:hover { background: #8479ff; }
+.account-menu .am-logout { color: #ff8a8a; }
+.account-menu .am-logout:hover { background: rgba(255, 107, 107, 0.12); color: #ff8a8a; }
+
+.account-head { padding: 10px 14px 12px; margin-bottom: 6px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+.account-head strong { display: block; font-size: 14px; }
+.account-head span { display: block; margin-top: 3px; font-size: 12px; color: #858490; overflow-wrap: anywhere; }
+
+/* logged-in button: avatar + name */
+.actions > a.logged-in { width: auto; padding: 0 14px 0 6px; gap: 8px; font-size: 13px; }
+.avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, #7167ff, #77faff);
+  color: #09090d; font-weight: 800; font-size: 13px;
+}
+.uname { max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* light theme */
+[data-theme="light"] .account-menu { background: #fff8f2; border-color: rgba(255, 106, 0, 0.25); box-shadow: 0 20px 50px rgba(255, 106, 0, 0.15); }
+[data-theme="light"] .account-menu a,
+[data-theme="light"] .account-menu button { color: #3a3733; }
+[data-theme="light"] .account-menu a:hover,
+[data-theme="light"] .account-menu button:hover { background: rgba(255, 106, 0, 0.1); color: #1a1a1a; }
+[data-theme="light"] .account-menu .am-primary { background: #ff6a00; color: #fff; }
+[data-theme="light"] .account-head { border-bottom-color: rgba(255, 106, 0, 0.2); }
+[data-theme="light"] .avatar { background: linear-gradient(135deg, #ff6a00, #ffb36b); color: #fff; }
+
+/* phones: avatar only, menu sits under the first header row */
+@media (max-width: 900px) { .account-menu { right: 16px; top: 64px; } }
+@media (max-width: 700px) {
+  .actions > a.logged-in { width: 44px; padding: 0; }
+  .uname { display: none; }
+}
