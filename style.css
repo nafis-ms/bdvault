@@ -3511,3 +3511,23 @@ button.primary { border: 0; cursor: pointer; color: #fff; font-family: inherit; 
   .actions > a.logged-in { width: 44px; padding: 0; }
   .uname { display: none; }
 }
+/* ===== PASSWORD STRENGTH BAR ===== */
+.pw-meter { margin-top: 10px; }
+.pw-bars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pw-bars i {
+  height: 6px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color .3s ease;
+}
+.pw-label { margin: 8px 0 0; min-height: 16px; font-size: 12px; color: #858490; transition: color .3s ease; }
+
+.pw-meter[data-level="low"]    .pw-bars i:nth-child(1)    { background: #ff6b6b; }
+.pw-meter[data-level="low"]    .pw-label                  { color: #ff6b6b; }
+.pw-meter[data-level="medium"] .pw-bars i:nth-child(-n+2) { background: #ffb020; }
+.pw-meter[data-level="medium"] .pw-label                  { color: #ffb020; }
+.pw-meter[data-level="high"]   .pw-bars i                 { background: #4ade80; }
+.pw-meter[data-level="high"]   .pw-label                  { color: #4ade80; }
+
+[data-theme="light"] .pw-bars i { background: rgba(0, 0, 0, 0.1); }
+[data-theme="light"] .pw-label  { color: #6b6760; }
