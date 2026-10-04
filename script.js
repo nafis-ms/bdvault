@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ACCOUNT: header icon, login, register
 document.addEventListener("DOMContentLoaded", function () {
   var user = BDV.auth.current();
-    var icon = document.querySelector('.actions a[href="login.html"]');
+  var icon = document.querySelector('.actions a[href="login.html"]');
   if (icon) {
     var menu = document.createElement("div");
     menu.className = "account-menu";
@@ -589,6 +589,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var pw = form.querySelector("#password").value;
     if (isRegister) {
       if (pw.length < 8) { msg.textContent = "Password must be at least 8 characters."; return; }
+      if (BDVStrength(pw).level === "low") {
+        msg.textContent = "Password is too weak. Use letters and numbers (add a special character for a strong password).";
+        return;
+      }
       if (pw !== form.querySelector("#confirm-password").value) { msg.textContent = "Passwords do not match."; return; }
       BDV.auth.register(form.querySelector("#name").value, email, pw).then(function (r) {
         if (!r.ok) { msg.textContent = r.error; return; }
@@ -613,6 +617,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", update, { passive: true });
   document.addEventListener("DOMContentLoaded", update);
 })();
+
 
 // HERO GRID CELL GLOW
 (function () {
@@ -667,6 +672,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })();
 
+
 // CATEGORY CARD SPOTLIGHT
 document.addEventListener("pointermove", function (e) {
   var card = e.target.closest ? e.target.closest(".cat") : null;
@@ -674,4 +680,50 @@ document.addEventListener("pointermove", function (e) {
   var r = card.getBoundingClientRect();
   card.style.setProperty("--mx", (e.clientX - r.left) + "px");
   card.style.setProperty("--my", (e.clientY - r.top) + "px");
+});
+
+
+// PASSWORD STRENGTH
+function BDVStrength(pw) {
+  var letter  = /\p{L}/u.test(pw);
+  var digit   = /[0-9]/.test(pw);
+  var special = /[^\p{L}0-9]/u.test(pw);
+  var level = letter && digit && special ? "high"
+            : letter && digit            ? "medium"
+            : "low";
+  return { level: level, letter: letter, digit: digit, special: special };
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var input = document.querySelector(".register-card #password");
+  if (!input) return;
+
+  var meter = document.createElement("div");
+  meter.className = "pw-meter";
+  meter.setAttribute("aria-live", "polite");
+  meter.innerHTML = '<div class="pw-bars"><i></i><i></i><i></i></div><p class="pw-label"></p>';
+  input.closest(".login-input").appendChild(meter);
+
+  var label = meter.querySelector(".pw-label");
+  var NAME = { low: "LOW", medium: "MEDIUM", high: "HIGH" };
+  var HINT = {
+    low:    "Too weak. Use both letters and numbers.",
+    medium: "Good. Add a special character like ! @ # $ for HIGH.",
+    high:   "Strong password."
+  };
+
+  function update() {
+    var v = input.value;
+    if (!v) {
+      meter.removeAttribute("data-level");
+      label.textContent = "Use letters, numbers and a special character (! @ # $ %).";
+      return;
+    }
+    var level = BDVStrength(v).level;
+    meter.setAttribute("data-level", level);
+    label.textContent = NAME[level] + " \u2014 " + HINT[level];
+  }
+
+  input.addEventListener("input", update);
+  update();
 });
